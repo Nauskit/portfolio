@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #1e1e1d;
-  --primary-color-dark: #2d3a3a;
-  --primary-color-light: #2ba84a;
+  --primary-color-dark: #d79447;
+  --primary-color-light: #f9ac54;
   --white: #ffffff;
   --max-width: 900px;
 }
@@ -147,6 +147,10 @@ ul {
   cursor: pointer;
 }
 
+.header_btns .btn:hover {
+  background-color: var(--primary-color-light);
+}
+
 .header_btns a {
   padding: 0.75rem 1.5rem;
   border: 2px solid white;
@@ -156,7 +160,7 @@ ul {
 
 .header_btns a:hover {
   color: var(--primary-color-light);
-  border-color: #2ba84a;
+  border-color: var(--primary-color-dark);
 }
 
 .header_ .header_content img:hover {
@@ -211,6 +215,7 @@ ul {
   background-color: var(--primary-color);
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project_card_detail {
@@ -273,6 +278,10 @@ ul {
   color: var(--white);
 }
 
+.footer_socials a:hover {
+  color: var(--primary-color-light);
+}
+
 @media (min-width: 786px) {
   nav {
     background-color: var(--primary-color);
@@ -290,6 +299,10 @@ ul {
   .nav_header {
     width: 100%;
     background-color: transparent;
+  }
+
+  .nav_logo a {
+    font-size: 2rem;
   }
 
   .nav_links {
@@ -310,5 +323,22 @@ ul {
 
   .section_container {
     max-width: none;
+  }
+
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-inline: auto;
+    max-width: 1500px;
+    margin-bottom: 2rem;
   }
 }
