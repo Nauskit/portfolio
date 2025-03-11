@@ -1,74 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!--nav section-->
-    <nav>
-      <div class="nav_container">
-        <div class="nav_header">
-          <div class="nav_logo">
-            <a href="#"><span>Kernel</span> Port</a>
-          </div>
-          <div class="nav_menu_btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!--nav section-->
+  <nav>
+    <div class="nav_container">
+      <div class="nav_header">
+        <div class="nav_logo">
+          <a href="#"><span>Kernel</span> Port</a>
         </div>
-        <ul class="nav_links" id="nav-links">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">EXPERIENCE</a></li>
-          <li><a href="#">PROJECT</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
-    </nav>
-
-    <!--header section-->
-    <header class="section_container header_container">
-      <img src="assets/rabbit.jpg" alt="profile" />
-      <h1>I'm Nutthakit<br />Fullstack Dev <span>Let's make it</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-        ex temporibus magni laudantium cumque officiis velit non, iusto
-        assumenda cupiditate cum beatae, sed placeat earum fugiat aspernatur
-        provident tempora consectetur?
-      </p>
-      <div class="header_btns">
-        <button class="btn">Touch</button>
-        <a href="#" download>Download</a>
-      </div>
-    </header>
-
-    <!--section skill-->
-    <section class="section_container skill_container">
-      <h2>EXPERIENCE TOOLS</h2>
-      <ul class="skill_lists">
-        <li>
-          <span><i class="ri-javascript-fill"></i></span>
-        </li>
-        <li>
-          <span><i class="ri-nextjs-fill"></i></span>
-        </li>
-        <li>
-          <span><i class="ri-html5-fill"></i></span>
-        </li>
-        <li>
-          <span><i class="ri-nodejs-line"></i></span>
-        </li>
-        <li>
-          <span><i class="ri-reactjs-line"></i></span>
-        </li>
+      <ul class="nav_links" id="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">EXPERIENCE</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">CONTACT</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <script src="main.js"></script>
-  </body>
+  <!--header section-->
+  <header class="section_container header_container">
+    <div class="header_content">
+      <h1>I'm Nutthakit <br />FullStack Developer</h1>
+      <img src="assets/dashboard.jpg" alt="project">
+      <h2>Project <span>Education</span></h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste iusto adipisci reprehenderit deserunt quidem</p>
+    </div>
+    <div class="header_btns">
+      <button class="btn">Get in Touch</button>
+      <a href="#" download="">Download CV</a>
+    </div>
+  </header>
+
+  <!--section skill-->
+  <section class="section_container skill_container">
+    <h2>EXPERIENCE TOOLS</h2>
+    <ul class="skill_lists">
+      <li>
+        <span><i class="ri-javascript-fill"></i></span>
+      </li>
+      <li>
+        <span><i class="ri-nextjs-fill"></i></span>
+      </li>
+      <li>
+        <span><i class="ri-html5-fill"></i></span>
+      </li>
+      <li>
+        <span><i class="ri-nodejs-line"></i></span>
+      </li>
+      <li>
+        <span><i class="ri-reactjs-line"></i></span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Project -->
+
+  <section class="section_container project_container">
+    <h2>PROJECT</h2>
+    <div class="project_grid">
+      <div class="project_card">
+        <img src="/assets/restaurant.jpg" alt="project" />
+        <div class="project_card_detail">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur</p>
+            <h4>portfolio landing Page</h4>
+          </div>
+          <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+      <div class="project_card">
+        <img src="/assets/restaurant.jpg" alt="project" />
+        <div class="project_card_detail">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur</p>
+            <h4>portfolio landing Page</h4>
+          </div>
+          <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+      <div class="project_card">
+        <img src="/assets/restaurant.jpg" alt="project" />
+        <div class="project_card_detail">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur</p>
+            <h4>portfolio landing Page</h4>
+          </div>
+          <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section_container footer_container" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam perferendis veniam illum saepe, quam
+        animi fuga molestiae qui voluptatum deserunt atque harum nemo beatae, earum eveniet fugit eum. Ab.
+      </p>
+      <div class="mail_contact">
+        <a>
+          <i class="ri-mail-line"></i>
+          nutthakit2541@hotmail.com
+        </a>
+      </div>
+      <ul class="footer_socials">
+        <li><a href="#">
+            <i class="ri-github-fill"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="ri-line-fill"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="ri-linkedin-box-fill"></i>
+          </a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
