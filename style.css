@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #1e1e1d;
+  --primary-color-dark: #2d3a3a;
+  --primary-color-light: #2ba84a;
+  --white: #ffffff;
+  --max-width: 900px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+}
+
+.section_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem;
+}
+
+.nav_container {
+  position: fixed;
+  width: 100%;
+  margin-inline: auto;
+  z-index: 9;
+}
+
+.nav_header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.nav_logo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.nav_logo span {
+  color: var(--primary-color-light);
+}
+
+.nav_menu_btn {
+  font-size: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav_menu_btn i:hover {
+  color: var(--primary-color-dark);
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  transition: 0.3s;
+  transform: translateY(-100%);
+  z-index: -1;
+}
+
+.nav_links a {
+  color: var(--white);
+}
+
+.nav_links a:hover {
+  color: var(--primary-color-dark);
+}
+
+.nav_links.open {
+  transform: translateY(0);
+}
+
+.header_container {
+  background-color: black;
+}
+.header_container img {
+  max-width: 200px;
+  height: 200px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+}
+
+.header_container h1 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.header_container p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--primary-color-dark);
+}
+
+.header_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header_btns .btn {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: var(--primary-color-dark);
+  background-color: var(--white);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header_btns .btn:hover {
+  color: var(--white);
+  background-color: var(--primary-color-dark);
+}
+
+.skill_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: black;
+  color: var(--white);
+}
+
+.skill_lists {
+  display: flex;
+  margin: 1.2rem;
+  gap: 2rem;
+}
+
+.skill_lists li {
+  font-size: 2rem;
+}
